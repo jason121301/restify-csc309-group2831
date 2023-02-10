@@ -1,0 +1,80 @@
+/* Set Homepage Background */
+body {
+    background: url(https://pbs.twimg.com/media/D9P5k6PXYAAhT4U?format=jpg&name=4096x4096) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.restify-logo {
+    color: #FF8967;
+    font-weight: bold;
+}
+
+.restify-logo:hover {
+    color: #FFF;
+}
+
+.notif-icon {
+    color: #FF8967;
+}
+
+#my-rentals-btn {
+    color: #FF8967;
+    border: 1px solid #FF8967;
+}
+
+#my-rentals-btn:hover {
+    color: #FFF;
+    background-color: #FF8967;
+}
+
+#profile-pic-navbar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#user-fn {
+    margin: 0;
+}
+
+.search-bar {
+    border: 1px solid #FF8967;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+.search-bar-heading {
+    font-weight: bold;
+}
+
+.search-category {
+    color: #FFF;
+}
+
+.vl {
+    border-left: 1px solid #FF8967;
+    height: auto;
+}
+
+.btn-theme {
+    color: #c3c3c3;
+    background-color: #FFF;
+}
+
+.btn-theme:hover {
+    color: #FFF;
+    background-color: #FF8967;
+}
+
+#search-btn {
+    color: #FFF;
+    background-color: #FF8967;
+    border: 1px solid #FF8967;
+}
