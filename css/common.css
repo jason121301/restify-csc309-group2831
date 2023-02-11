@@ -5,7 +5,8 @@
 }
 
 .restify-logo:hover {
-    color: #FFF;
+    color: #000000;
+    text-decoration: none;
 }
 
 .notif-icon {
