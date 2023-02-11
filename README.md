@@ -27,10 +27,8 @@ Restify is a web-application, much like AirBNB or Bookings.com which allows user
 - [x] Home
 - [x] Account
     - [x] Personal information
-    - [ ] My reservations
-    - [ ] My properties
-    
-    *user becomes a host here*
+    - [ ] My reservations (*user is a guest*)
+    - [ ] My properties (*user is now a host*)
         - [ ] Property management page
         - [ ] User page from the POV of a host  
     - [ ] Reviews
