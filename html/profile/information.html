@@ -22,7 +22,24 @@
             <!-- Interactive Buttons Begin -->
             <div class="d-flex flex-row align-items-center">
                 <!-- Notifications Begin -->
-                <i class="bi bi-bell notif-icon mx-1"></i>
+                <div class="dropdown">
+                    <i class="bi bi-bell notif-icon mx-1"></i>
+                    <i class="bi bi-bell-fill notif-icon-fill mx-1" type="button" id="notificationButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                    <div class="dropdown-menu my-3" aria-labelledby="notificationButton">
+                        <div class="dropdown-item dropdown-card">
+                            <h6>New login</h6>
+                            <a class="stretched-link" href="#">Review details</a>
+                        </div>
+                        <div class="dropdown-item dropdown-card">
+                            <h6>Booking starting soon!</h6>
+                            <a class="stretched-link" href="#">Check-in</a>
+                        </div>
+                        <div class="dropdown-item dropdown-card">
+                            <h6>You've got a guest!</h6>
+                            <a class="stretched-link" href="#">Review their stay</a>
+                        </div>
+                    </div>
+                </div>
                 <!-- Notifications End -->
 
                 <button id="my-rentals-btn" class="btn btn-outline-danger my-2 mx-2" type="submit">My Rental Units</button>

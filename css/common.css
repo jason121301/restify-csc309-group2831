@@ -11,6 +11,32 @@
 
 .notif-icon {
     color: #FF8967;
+    cursor: pointer;
+}
+
+.notif-icon:hover {
+    display: none;
+}
+
+.notif-icon ~ .notif-icon-fill {
+    display: none;
+}
+
+.notif-icon:hover ~ .notif-icon-fill {
+    display: inline-block;
+}
+
+.notif-icon-fill {
+    color: #FF8967;
+}
+
+.dropdown-card {
+    position: relative;
+}
+
+.dropdown-card > a {
+    color: #FF8967;
+    cursor: pointer;
 }
 
 #my-rentals-btn {
