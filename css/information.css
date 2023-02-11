@@ -1,0 +1,28 @@
+tr.no-border td, tr.no-border th {
+    border: 0;
+}
+
+#profile-pic-information {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#profile-pic-information:hover {
+    cursor: pointer;
+    /* Darken the image */
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.edit-icon {
+    color: #FF8967;
+}
+
+.edit-icon:hover {
+    color: #7e7e7e;
+}

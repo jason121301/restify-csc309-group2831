@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/profile.css">
     <link rel="stylesheet" href="../../css/common.css">
@@ -43,37 +43,51 @@
         <h4 class="text-left">Manage your experience</h4>
         <!-- Headings End -->
 
+        
+
         <!-- Cards Begin -->
-        <div class="d-flex flex-row my-4">
+        <div class="card-deck flex-row my-4">
             <!-- Personal Info Begin -->
-            <div class="settings-card p-3 w-25">
-                <i class="bi bi-person-lines-fill h3 settings-icon"></i>
-                <h4 class="text-left mt-3">Personal info</h4>
-                <p class="text-left">Update your profile details</p>
+            <div class="card settings-card w-25">
+                <div class="card-body">
+                    <i class="bi bi-person-lines-fill h3 settings-icon"></i>
+                    <h4 class="text-left mt-3">Personal info</h4>
+                    <p class="text-left">Update your profile details</p>
+                    <a href="information.html" class="stretched-link"></a>
+                </div>
             </div>
             <!-- Personal Info End -->
 
             <!-- Reservations Begin -->
-            <div class="settings-card p-3 w-25 ml-3">
-                <i class="bi bi-house-check h3 settings-icon"></i>
-                <h4 class="text-left mt-3">My reservations</h4>
-                <p class="text-left">Review your reserved options</p>
+            <div class="card settings-card w-25 ml-3">
+                <div class="card-body">
+                    <i class="bi bi-house-check h3 settings-icon"></i>
+                    <h4 class="text-left mt-3">My reservations</h4>
+                    <p class="text-left">Review your reserved options</p>
+                    <a href="reservations.html" class="stretched-link"></a>
+                </div>
             </div>
             <!-- Reservations End -->
 
             <!-- Properties Begin -->
-            <div class="settings-card p-3 w-25 ml-3">
-                <i class="bi bi-house h3 settings-icon"></i>
-                <h4 class="text-left mt-3">My properties</h4>
-                <p class="text-left">Manage your properties</p>
+            <div class="card settings-card w-25 ml-3">
+                <div class="card-body">
+                    <i class="bi bi-house h3 settings-icon"></i>
+                    <h4 class="text-left mt-3">My properties</h4>
+                    <p class="text-left">Manage your properties</p>
+                    <a href="properties.html" class="stretched-link"></a>
+                </div>
             </div>
             <!-- Properties End -->
 
             <!-- Reviews Begin -->
-            <div class="settings-card p-3 w-25 ml-3">
-                <i class="bi bi-envelope-plus h3 settings-icon"></i>
-                <h4 class="text-left mt-3">Reviews</h4>
-                <p class="text-left">View both hosting and guest reviews</p>
+            <div class="card settings-card w-25 ml-3">
+                <div class="card-body">
+                    <i class="bi bi-envelope-plus h3 settings-icon"></i>
+                    <h4 class="text-left mt-3">Reviews</h4>
+                    <p class="text-left">View both hosting and guest reviews</p>
+                    <a href="reviews.html" class="stretched-link"></a>
+                </div>
             </div>
             <!-- Reviews End -->
         </div>
