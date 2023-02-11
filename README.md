@@ -1,7 +1,53 @@
-Restify project for CSC309
+# Restify
 
-Figma file:
-https://www.figma.com/file/H31fLA6S9HD2z4CoH7sjNV/Restify-design?node-id=0%3A1&t=cbD3qu6tmhFL1Rt2-0
+*Find the perfect place to stay!*
 
-Board with info:
-https://www.figma.com/file/YRL2J8DXMkf9TjoVeqc121/Restify?node-id=0%3A1&t=T6iVhlTHlZ59OLB1-1
+---
+
+## About
+
+Restify is a web-application, much like AirBNB or Bookings.com which allows users to browse/book properties for a getaway, place their own properties up for rent, and manage their bookings.
+
+## Features
+
+- Browse properties
+- Book properties
+- Manage bookings
+- Manage properties
+
+
+## Getting Started
+
+*Coming soon*
+
+## Roadmap
+
+**Pages:**
+- [x] Home
+- [x] Account
+- [ ] Personal information
+- [ ] My reservations
+- [ ] My properties
+- [ ] Reviews
+- [ ] Catalog
+- [ ] Booking
+- [ ] Sign-up / Log-in
+
+
+## Credits
+
+### Technologies
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- Figma
+    - [Planning](https://www.figma.com/file/YRL2J8DXMkf9TjoVeqc121/Restify?node-id=0%3A1&t=T6iVhlTHlZ59OLB1-1)
+    - [Design](https://www.figma.com/file/H31fLA6S9HD2z4CoH7sjNV/Restify-design?node-id=0%3A1&t=cbD3qu6tmhFL1Rt2-0)
+
+### Team
+
+- [Ashenafee Mandefro]()
+- [Jason Sastra]()
+- [Kateryna Stanislavska]()
