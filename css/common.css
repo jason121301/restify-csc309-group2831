@@ -1,0 +1,47 @@
+/* Header Begin */
+.restify-logo {
+    color: #FF8967;
+    font-weight: bold;
+}
+
+.restify-logo:hover {
+    color: #FFF;
+}
+
+.notif-icon {
+    color: #FF8967;
+}
+
+#my-rentals-btn {
+    color: #FF8967;
+    border: 1px solid #FF8967;
+}
+
+#my-rentals-btn:hover {
+    color: #FFF;
+    background-color: #FF8967;
+}
+
+#profile-pic-navbar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#user-fn {
+    color: #000;
+    margin: 0;
+}
+
+#user-fn:hover {
+    color: #FF8967;
+    text-decoration: none;
+}
+/* Header End */
+
+/* Footer Begin */
+.footer {
+    color: #FFF;
+    font-weight: 500;
+}
+/* Footer End */
