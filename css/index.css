@@ -53,3 +53,7 @@ a:hover {
     background-color: #FF8967;
     border: 1px solid #FF8967;
 }
+
+#index-footer {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(100, 100, 100));
+}
