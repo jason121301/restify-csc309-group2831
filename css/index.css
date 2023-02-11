@@ -41,7 +41,13 @@ p {
 }
 
 #user-fn {
+    color: #000;
     margin: 0;
+}
+
+#user-fn:hover {
+    color: #FF8967;
+    text-decoration: none;
 }
 
 .search-bar {
@@ -71,15 +77,6 @@ p {
 .btn-theme:hover {
     color: #FFF;
     background-color: #FF8967;
-}
-
-#user-fn {
-    color: #000;
-}
-
-#user-fn:hover {
-    color: #FF8967;
-    text-decoration: none;
 }
 
 #search-btn {
