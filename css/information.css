@@ -26,3 +26,8 @@ tr.no-border td, tr.no-border th {
 .edit-icon:hover {
     color: #7e7e7e;
 }
+
+#information-footer {
+    color: #000000;
+    font-weight: 500;
+}
