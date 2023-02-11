@@ -48,6 +48,6 @@ Restify is a web-application, much like AirBNB or Bookings.com which allows user
 
 ### Team
 
-- [Ashenafee Mandefro]()
-- [Jason Sastra]()
-- [Kateryna Stanislavska]()
+- [Ashenafee Mandefro](https://github.com/ashenafee)
+- [Jason Sastra](https://github.com/jason121301)
+- [Kateryna Stanislavska](https://github.com/stankate)
