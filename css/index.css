@@ -73,6 +73,15 @@ p {
     background-color: #FF8967;
 }
 
+#user-fn {
+    color: #000;
+}
+
+#user-fn:hover {
+    color: #FF8967;
+    text-decoration: none;
+}
+
 #search-btn {
     color: #FFF;
     background-color: #FF8967;
