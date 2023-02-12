@@ -1,3 +1,6 @@
+
+
+
 .restify-logo {
     color: #FF8967;
     font-weight: bold;
@@ -68,9 +71,7 @@
 }
 
 .col{
-    border-color:#FF8967;
-    border-style:solid;
-}
+    border-color:#FF8967;}
 
 .book-button{
     font-size:30px;
@@ -83,4 +84,9 @@
     background-color: #FFF;
     color:#FF8967;
     border-color:#FF8967;
+}
+
+.rating-number{
+    font-size: 16px;
+    color:#FF8967;
 }
