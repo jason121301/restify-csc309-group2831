@@ -12,30 +12,50 @@
     <title>Hello, world!</title>
   </head>
   <body>
-            <!-- Navigation Bar Begin -->
-            <nav class="navbar mx-5">
-                <a class="navbar-brand restify-logo" href="index.html">Restify</a>
-                
-                <!-- Interactive Buttons Begin -->
-                <form class="form-inline">
-        
-                    <!-- Notifications Begin -->
+    <!-- Navigation Bar Begin -->
+    <nav class="navbar mx-5">
+
+        <div class="d-flex flex-row justify-content-between w-100">
+
+            <a class="navbar-brand restify-logo" href="index.html">Restify</a>
+
+            <!-- Interactive Buttons Begin -->
+            <div class="d-flex flex-row align-items-center">
+                <!-- Notifications Begin -->
+                <div class="dropdown">
                     <i class="bi bi-bell notif-icon mx-1"></i>
-                    <!-- Notifications End -->
-        
-                    <button id="my-rentals-btn" class="btn btn-outline-danger my-2 mx-2" type="submit">My Rental Units</button>
-        
-                    <!-- Profile Menu Begin -->
-                    <div class="d-flex align-items-center">
-                        <img id="profile-pic-navbar" src="../images/profile-pic.png" alt="Profile Picture">
-                        <p id="user-fn" class="mx-2">John</p>
+                    <i class="bi bi-bell-fill notif-icon-fill mx-1" type="button" id="notificationButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                    <div class="dropdown-menu my-3" aria-labelledby="notificationButton">
+                        <div class="dropdown-item dropdown-card">
+                            <h6>New login</h6>
+                            <a class="stretched-link" href="#">Review details</a>
+                        </div>
+                        <div class="dropdown-item dropdown-card">
+                            <h6>Booking starting soon!</h6>
+                            <a class="stretched-link" href="#">Check-in</a>
+                        </div>
+                        <div class="dropdown-item dropdown-card">
+                            <h6>You've got a guest!</h6>
+                            <a class="stretched-link" href="#">Review their stay</a>
+                        </div>
                     </div>
-                    <!-- Profile Menu End -->
-                </form>
-                <!-- Interactive Buttons End -->
-                
-            </nav>
-            <!-- Navigation Bar End -->
+                </div>
+                <!-- Notifications End -->
+
+                <button id="my-rentals-btn" class="btn btn-outline-danger my-2 mx-2" type="submit">My Rental Units</button>
+
+                <!-- Profile Menu Begin -->
+                <div class="d-flex align-items-center">
+                    <img id="profile-pic-navbar" src="../images/profile-pic.png" alt="Profile Picture">
+                    <a id="user-fn" class="mx-2" href="profile/profile.html">John</a>
+                </div>
+                <!-- Profile Menu End -->
+            </div>
+            <!-- Interactive Buttons End -->
+        </div>
+        
+    </nav>
+    <!-- Navigation Bar End -->
     <div class ="container" >
         <div class="row">
             <div class="col">
