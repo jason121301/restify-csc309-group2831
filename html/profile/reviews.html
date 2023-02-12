@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/reviews.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Profile | Reviews</title>
+<body>
+    <!-- Navigation Bar Begin -->
+    <nav class="navbar mx-5">
+
+        <div class="d-flex flex-row justify-content-between w-100">
+
+            <a class="navbar-brand restify-logo" href="../index.html">Restify</a>
+
+            <!-- Interactive Buttons Begin -->
+            <div class="d-flex flex-row align-items-center">
+                <!-- Notifications Begin -->
+                <div class="dropdown">
+                    <i class="bi bi-bell notif-icon mx-1"></i>
+                    <i class="bi bi-bell-fill notif-icon-fill mx-1" type="button" id="notificationButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                    <div class="dropdown-menu my-3" aria-labelledby="notificationButton">
+                        <div class="dropdown-item dropdown-card">
+                            <h6>New login</h6>
+                            <a class="stretched-link" href="#">Review details</a>
+                        </div>
+                        <div class="dropdown-item dropdown-card">
+                            <h6>Booking starting soon!</h6>
+                            <a class="stretched-link" href="#">Check-in</a>
+                        </div>
+                        <div class="dropdown-item dropdown-card">
+                            <h6>You've got a guest!</h6>
+                            <a class="stretched-link" href="#">Review their stay</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Notifications End -->
+
+                <button id="my-rentals-btn" class="btn btn-outline-danger my-2 mx-2" type="submit">My Rental Units</button>
+
+                <!-- Profile Menu Begin -->
+                <div class="d-flex align-items-center">
+                    <img id="profile-pic-navbar" src="../../images/profile-pic.png" alt="Profile Picture">
+                    <a id="user-fn" class="mx-2" href="profile.html">John</a>
+                </div>
+                <!-- Profile Menu End -->
+            </div>
+            <!-- Interactive Buttons End -->
+        </div>
+        
+    </nav>
+    <!-- Navigation Bar End -->
+
+    <main class="mt-5 mx-5 px-3 flex-sm-wrap">
+
+        <div class="content d-flex flex-column w-100">
+            <!-- Headings Begin -->
+            <div>
+                <h1 class="text-left">Reviews</h1>
+                <h4 class="text-left">View your guest and host reviews</h4>
+            </div>
+            <!-- Headings End -->
+    
+            <!-- Information Begin -->
+            <div class="d-flex flex-row">
+                <div class="card w-75">
+                    <div class="card-body">
+                        <h5 class="card-title">Guest</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Your 3 most recent ratings:</h6>
+                        <p class="card-text">
+                            <div class="d-flex flex-row justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <h6>Zeus</h6>
+                                    <h6>5/5</h6>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h6>Poseidon</h6>
+                                    <h6>5/5</h6>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h6>Hades</h6>
+                                    <h6>5/5</h6>
+                                </div>
+                            </div>
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="#" data-toggle="modal" data-target="#zeusProperty1Modal">
+                                    Your stay at <b>Zeus</b>' destination.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    Your stay at <b>Poseidon</b>'s destination.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    Your stay at <b>Hades</b>' destination.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    Your stay at <b>Ares</b>'s destination.
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card w-75 ml-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Host</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Your 3 most recent ratings:</h6>
+                        <p class="card-text">
+                            <div class="d-flex flex-row justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <h6>Jupiter</h6>
+                                    <h6>5/5</h6>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h6>Neptune</h6>
+                                    <h6>5/5</h6>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h6>Pluto</h6>
+                                    <h6>5/5</h6>
+                                </div>
+                            </div>
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="#">
+                                    Jupiter's stay at <b>Property 1</b>.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    Neptune's stay at <b>Property 2</b>.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    Pluto's stay at <b>Property 3</b>.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    Mars' stay at <b>Property 4</b>.
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Information End -->
+        </div>
+
+        <!-- Review Modals Begin -->
+        <!-- Modal -->
+        <div class="modal fade" id="zeusProperty1Modal" tabindex="-1" role="dialog" aria-labelledby="zeusProperty1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="zeusProperty1ModalLabel">
+                            Zeus - Property 1
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column">
+                            <div class="card mb-2">
+                                <div class="card-body">
+                                    <h6 class="card-title">Communication</h6>
+                                    <h6 class="card-subtitle mb-2 text-muted">5/5</h6>
+                                </div>
+                            </div>
+                            <div class="card mb-2">
+                                <div class="card-body">
+                                    <h6 class="card-title">Cleanliness</h6>
+                                    <h6 class="card-subtitle mb-2 text-muted">5/5</h6>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">Overall</h6>
+                                    <h6 class="card-subtitle mb-2 text-muted">5/5</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Review Modals End -->
+        
+    </main>
+
+    <!-- Footer Begin -->
+    <footer id="reviews-footer" class="navbar fixed-bottom px-5 footer">
+        <div class="d-flex flex-row justify-content-center align-items-center">
+            <a href="index.html" class="restify-logo mx-2">Restify</a>
+        </div>
+        <div class="d-flex flex-row justify-content-center align-items-center">
+            <p class="mx-2">© 2023 Restify</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+</body>
+</html>
