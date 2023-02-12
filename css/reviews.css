@@ -8,6 +8,33 @@ a:hover {
     text-decoration: none;
 }
 
+textarea {
+    resize: none;
+}
+
+.modal-w-50 {
+    width: 50vw !important;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        max-width: fit-content;
+    }
+}
+
+.review-card {
+    width: 23% !important;
+}
+
+.review-card-right {
+    margin-left: 2% !important;
+}
+
+.btn-theme {
+    background-color: #FF8967;
+    color: #fff;
+}
+
 #reviews-footer {
     color: #000000;
     font-weight: 500;
