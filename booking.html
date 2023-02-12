@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/property.css">
+    <link rel="stylesheet" href="css/booking.css">
     <link rel="stylesheet" href="css/common.css">
     <title>Hello, world!</title>
   </head>
@@ -44,29 +44,25 @@
                 <img src="images/house2.jpg" class ="property-image"></img>
                 <p>Rented by John</p>
             </div>
-            <div class="col">
-                <h2>Toronto, Ontario</h2>
-                <p style="margin-bottom:40px;">40 St George St, Toronto, ON</p><br>
-                <p style="margin-bottom:30px;">A nice cozy three bedroom house in suburban Toronto, A great place to vacation and hang out with your family.
-                    Close to many restaurants and attractions along with a close proximity to the subway. Kitchen provided and electricity provided.
-                </p>
-                    <ul>
-                        <li>3 bedroom</li>
-                        <li>Kitchen provided</li>
-                        <li>3 bathroom</li>
-                        <li>Electricity provided</li>
-                        <li>Independent cleaning</li>
-                    </ul>
-                <p>Contact: <a href="mailto:randomrservator@mail.utoronto.ca">randomreservator@mail.utoronto.ca</a></p>
-                <h2 class = "price-tag">120.60 per day</h2>
-                <p style="font-size:10px;">Tax and other fees not included</p>
-                <form action="booking.html">
-                    <button class = "rent-button" href="booking.html">Rent</button>
+            <div class="col" style="position:relative;">
+                <h1 style="margin-bottom:80px">Select your date:</h1>
+                <h3>Price: 160.20 per day</h3>
+                <form>
+                <label for="startdate">Starting Date:</label>
+                <input type="datetime-local" id="startdate" name="startdate">
+                <br>
+                <label for="enddate">Ending Date:</label>
+                <input type="datetime-local" id="enddate" name="enddate"> <br>
+                <h3>Total: </h3>
+                <input type="checkbox" id="consent" name="consent"></input>
+                <label for="consent">I have agreed to the <a>terms and services</a></label><br>
+                <button class ="book-button" type="submit">Rent Place</button>
                 </form>
-            
+                <form action="property.html">
+                    <button class = "back-button" href="property.html">Back</button>
+                </form>
             </div>
-            
-            
+                
 
         </div>
     </div>

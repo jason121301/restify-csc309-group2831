@@ -51,14 +51,17 @@
     padding-bottom: 0px;
 }
 
-.rent-button{
+.back-button{
     font-size:30px;
     color:#FFF;
     background-color: #FF8967;
     border-color:#FFF;
+    position:absolute;
+    bottom:0px;
+    right:0px;
 }
 
-.rent-button:hover{
+.back-button:hover{
     background-color: #FFF;
     color:#FF8967;
     border-color:#FF8967;
@@ -67,4 +70,17 @@
 .col{
     border-color:#FF8967;
     border-style:solid;
+}
+
+.book-button{
+    font-size:30px;
+    color:#FFF;
+    background-color: #FF8967;
+    border-color:#FFF;
+}
+
+.book-button:hover{
+    background-color: #FFF;
+    color:#FF8967;
+    border-color:#FF8967;
 }
