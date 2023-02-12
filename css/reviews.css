@@ -12,8 +12,18 @@ textarea {
     resize: none;
 }
 
+.modal-w-50 {
+    width: 50vw !important;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        max-width: fit-content;
+    }
+}
+
 .review-card {
-    width: 49% !important;
+    width: 23% !important;
 }
 
 .review-card-right {
