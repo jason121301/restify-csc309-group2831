@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/reviews.css">
     <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/reviews.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -60,7 +60,7 @@
     </nav>
     <!-- Navigation Bar End -->
 
-    <main class="mt-5 mx-5 px-3 flex-sm-wrap">
+    <main id="main-body" class="mt-5 mx-5 px-3 flex-sm-wrap">
 
         <div class="content d-flex flex-column w-100">
             <!-- Headings Begin -->
@@ -70,9 +70,9 @@
             </div>
             <!-- Headings End -->
     
-            <!-- Information Begin -->
-            <div class="d-flex flex-row">
-                <div class="card w-75">
+            <!-- Reviews Begin -->
+            <div id="review-card-container" class="d-flex flex-row">
+                <div class="card w-75 review-card-box">
                     <div class="card-body">
                         <h5 class="card-title">Guest</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Your 3 most recent ratings:</h6>
@@ -116,7 +116,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card w-75 ml-3">
+                <div id="host-review-box" class="card w-75 ml-3 review-card-box">
                     <div class="card-body">
                         <h5 class="card-title">Host</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Your 3 most recent ratings:</h6>
@@ -161,7 +161,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Information End -->
+            <!-- Reviews End -->
         </div>
 
         <!-- Review Modals Begin -->
@@ -206,7 +206,7 @@
         </div>
         <div class="modal fade" id="neptuneProperty2Modal" tabindex="-1" role="dialog" aria-labelledby="neptuneProperty2ModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-                <div class="modal-content modal-w-50">
+                <div id="neptune-modal-content" class="modal-content modal-w-50">
                     <div class="modal-header">
                         <h5 class="modal-title" id="neptuneProperty2ModalLabel">
                             Neptune's stay at Property 2
@@ -291,7 +291,7 @@
     <!-- Footer Begin -->
     <footer id="reviews-footer" class="navbar fixed-bottom px-5 footer">
         <div class="d-flex flex-row justify-content-center align-items-center">
-            <a href="index.html" class="restify-logo mx-2">Restify</a>
+            <a href="../index.html" class="restify-logo mx-2">Restify</a>
         </div>
         <div class="d-flex flex-row justify-content-center align-items-center">
             <p class="mx-2">© 2023 Restify</p>

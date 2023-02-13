@@ -8,6 +8,10 @@ a:hover {
     text-decoration: none;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 textarea {
     resize: none;
 }
@@ -38,4 +42,41 @@ textarea {
 #reviews-footer {
     color: #000000;
     font-weight: 500;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #main-body {
+        padding: 0 !important;
+        margin: 1rem !important;
+    }
+
+    #review-card-container {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .review-card-box {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    #host-review-box {
+        margin-bottom: 2rem !important;
+    }
+
+    #neptune-modal-content {
+        width: 100% !important;
+    }
+
+    .review-card {
+        width: 45% !important;
+        margin-left: 0 !important;
+    }
+
+    #reviews-footer {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
 }

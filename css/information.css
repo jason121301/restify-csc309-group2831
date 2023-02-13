@@ -2,6 +2,10 @@ tr.no-border td, tr.no-border th {
     border: 0;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 #profile-pic-information {
     border-radius: 50%;
     width: 100px;
@@ -30,4 +34,17 @@ tr.no-border td, tr.no-border th {
 #information-footer {
     color: #000000;
     font-weight: 500;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #main-body {
+        padding: 0 !important;
+        margin: 1rem !important;
+    }
+
+    #information-footer {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
 }
