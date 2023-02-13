@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/user-from-host-pov.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Profile | User From Host POV</title>
+<body>
+    <!-- Navigation Bar Begin -->
+    <nav id="navbar-index" class="navbar mx-5">
+
+        <div class="d-flex flex-row justify-content-between w-100">
+
+            <a class="navbar-brand restify-logo" href="index.html">Restify</a>
+
+            <!-- Interactive Buttons Begin -->
+            <div class="d-flex flex-row align-items-center">
+                <!-- Notifications Begin -->
+                <div class="dropdown">
+                    <i class="bi bi-bell notif-icon mx-1"></i>
+                    <i class="bi bi-bell-fill notif-icon-fill mx-1" type="button" id="notificationButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                    <div id="notification-dropdown" class="dropdown-menu dropdown-menu-right my-3" aria-labelledby="notificationButton">
+                        <div class="dropdown-item dropdown-card">
+                            <h6>New login</h6>
+                            <a class="stretched-link" href="profile/information.html">Review details</a>
+                        </div>
+                        <div class="dropdown-item dropdown-card">
+                            <h6>Booking starting soon!</h6>
+                            <a class="stretched-link" href="#">Check-in</a>
+                        </div>
+                        <div class="dropdown-item dropdown-card">
+                            <h6>You've got a guest!</h6>
+                            <a class="stretched-link" href="#">Review their stay</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Notifications End -->
+
+                <button id="my-rentals-btn" class="btn btn-outline-danger my-2 mx-2" onclick="window.location.href='profile/myproperty.html';" type="submit">My Rental Units</button>
+                <i id="my-rentals-icon" class="bi bi-house-check mx-2"></i>
+                <i id="my-rentals-icon-fill" class="bi bi-house-check-fill mx-2"></i>
+
+
+                <!-- Profile Menu Begin -->
+                <div class="dropdown">
+                    <div class="d-flex align-items-center" type="button" id="profileButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img id="profile-pic-navbar" src="../images/profile-pic.png" alt="Profile Picture">
+                        <a id="user-fn" class="mx-2" href="profile/profile.html">John</a>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-right my-3" aria-labelledby="profileButton">
+                        <div class="dropdown-item dropdown-card account-dropdown-item">
+                            <a class="stretched-link" href="profile/profile.html">Manage Profile</a>
+                        </div>
+                        <div class="dropdown-item dropdown-card account-dropdown-item">
+                            <a class="stretched-link" href="reservation.html">My Reservations</a>
+                        </div>
+                        <div class="dropdown-item dropdown-card account-dropdown-item">
+                            <a class="stretched-link" href="profile/myproperty.html">My Properties</a>
+                        </div>
+                        <div class="dropdown-item dropdown-card account-dropdown-item">
+                            <a class="stretched-link" href="#">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Profile Menu End -->
+            </div>
+            <!-- Interactive Buttons End -->
+        </div>
+        
+    </nav>
+    <!-- Navigation Bar End -->
+
+    <main id="main-body" class="d-flex flex-column mt-5 ml-5 px-3 flex-sm-wrap align-items-center">
+
+        <div id="main-content-container" class="content w-50">
+            <div class="d-flex flex-row justify-content-between">
+                <!-- Headings Begin -->
+                <div>
+                    <h1 class="text-left">John</h1>
+
+                    <div class="star-rate my-1">
+                        <i class="fas fa-star mr-2"></i>
+                        <p>4.5</p>
+                    </div>
+                </div>
+                
+                <img id="profile-pic-information" src="../images/profile-pic.png"/>
+                <!-- Headings End -->
+            </div>
+    
+            <!-- Header -->
+            <div class="d-flex flex-row justify-content-between align-items-center mt-5">
+                <h3>Recent reviews</h3>
+                
+                <a class = "add-prop float-right" href="#" data-toggle="modal" data-target="#leavereviewmodal">Leave review</a>
+            </div>
+
+            <!-- Comment -->
+            <div class="card my-4">
+                <div class="row mx-0">
+
+                    <div class="col-2 px-0">
+                        <img id="profile-pic-information-host" src="../images/profile-pic.png"/>
+                    </div>
+
+                    <div class="col-10 px-0">
+                        <h6 class="mb-1">Angela</h6>
+    
+                        <div class="star-rate">
+                            <i class="fas fa-star mr-2"></i>
+                            <p>4.5</p>
+                        </div>
+                    </div>
+
+                    <!-- comment -->
+                    <div class="w-100 pt-3">
+                        <h6>Comment</h6>
+                        <p>John's property was clean and the booking process was very smooth. Would definitely recommend staying at this property!</p>
+                    </div>  
+                </div>
+            </div>
+            <!-- Comment End -->
+
+            <!-- Comment -->
+            <div class="card my-4">
+                <div class="row mx-0">
+
+                    <div class="col-2 px-0">
+                        <img id="profile-pic-information-host" src="../images/profile-pic.png"/>
+                    </div>
+
+                    <div class="col-10 px-0">
+                        <h6 class="mb-1">Antony</h6>
+    
+                        <div class="star-rate">
+                            <i class="fas fa-star mr-2"></i>
+                            <p>4.5</p>
+                        </div>
+                    </div>
+
+                    <!-- comment -->
+                    <div class="w-100 pt-3">
+                        <h6>Comment</h6>
+                        <p>John's property was clean and the booking process was very smooth. Would definitely recommend staying at this property!</p>
+                    </div>  
+                </div>
+            </div>
+            <!-- Comment End -->
+
+            <!-- Comment -->
+            <div class="card my-4">
+                <div class="row mx-0">
+
+                    <div class="col-2 px-0">
+                        <img id="profile-pic-information-host" src="../images/profile-pic.png"/>
+                    </div>
+
+                    <div class="col-10 px-0">
+                        <h6 class="mb-1">Maria</h6>
+    
+                        <div class="star-rate">
+                            <i class="fas fa-star mr-2"></i>
+                            <p>4.5</p>
+                        </div>
+                    </div>
+
+                    <!-- comment -->
+                    <div class="w-100 pt-3">
+                        <h6>Comment</h6>
+                        <p>John's property was clean and the booking process was very smooth. Would definitely recommend staying at this property!</p>
+                    </div>  
+                </div>
+            </div>
+            <!-- Comment End -->
+
+        </div>
+
+
+        <!-- Modals Begin -->
+        <div class="modal fade" id="leavereviewmodal" tabindex="-1" role="dialog" aria-labelledby="leavereviewmodal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="leavereviewmodal">
+                            Leave a review 
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <form action="#" method="post" novalidate="novalidate">
+                        <div class="modal-body">
+                            <div class="d-flex flex-column">
+
+                                <h6 class="mt-1 mx-3">Rate your guest</h6>
+                                <fieldset class="rating mx-3">
+                                    <input type="radio" id="star5" name="rating" value="5" />
+                                    <label class = "star" for="star5" title="Awesome - 5 stars"></label>
+
+                                    <input type="radio" id="star4" name="rating" value="4" />
+                                    <label class = "star" for="star4" title="Pretty good - 4 stars"></label>
+
+                                    <input type="radio" id="star3" name="rating" value="3" />
+                                    <label class = "star" for="star3" title="Meh - 3 stars"></label>
+
+                                    <input type="radio" id="star2" name="rating" value="2" />
+                                    <label class = "star" for="star2" title="Kinda bad - 2 stars"></label>
+
+                                    <input type="radio" id="star1" name="rating" value="1" />
+                                    <label class = "star" for="star1" title="Sucks big time - 1 star"></label>
+                                </fieldset>
+
+                                <div class="form-group mx-3">
+                                    <label for="commentTextInput">Write your comment</label>
+                                    <textarea class="form-control" id="commentTextInput" rows="3"></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" class="btn btn-secondary" data-dismiss="modal" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Modals End -->        
+        
+    </main>
+
+    <!-- Footer Begin -->
+    <footer id="index-footer" class="navbar px-2 my-2 footer">
+        <div class="container py-4 d-flex flex-row justify-content-between align-items-center">
+            <a href="../index.html" class="navbar-brand restify-logo">Restify</a>
+            <p class="my-0">© 2023 Restify</p>
+        </div>    
+    </footer>
+    <!-- Footer End -->
+
+</body>
+</html>
