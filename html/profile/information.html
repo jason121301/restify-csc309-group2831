@@ -48,9 +48,25 @@
 
 
                 <!-- Profile Menu Begin -->
-                <div class="d-flex align-items-center">
-                    <img id="profile-pic-navbar" src="../../images/profile-pic.png" alt="Profile Picture">
-                    <a id="user-fn" class="mx-2" href="profile.html">John</a>
+                <div class="dropdown">
+                    <div class="d-flex align-items-center" type="button" id="profileButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img id="profile-pic-navbar" src="../../images/profile-pic.png" alt="Profile Picture">
+                        <a id="user-fn" class="mx-2" href="profile.html">John</a>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-right my-3" aria-labelledby="profileButton">
+                        <div class="dropdown-item dropdown-card account-dropdown-item">
+                            <a class="stretched-link" href="profile.html">Manage Profile</a>
+                        </div>
+                        <div class="dropdown-item dropdown-card account-dropdown-item">
+                            <a class="stretched-link" href="#">My Reservations</a>
+                        </div>
+                        <div class="dropdown-item dropdown-card account-dropdown-item">
+                            <a class="stretched-link" href="myproperty.html">My Properties</a>
+                        </div>
+                        <div class="dropdown-item dropdown-card account-dropdown-item">
+                            <a class="stretched-link" href="#">Log Out</a>
+                        </div>
+                    </div>
                 </div>
                 <!-- Profile Menu End -->
             </div>
@@ -62,7 +78,7 @@
 
     <main id="main-body" class="d-flex flex-column mt-5 ml-5 px-3 flex-sm-wrap align-items-center">
 
-        <div class="content w-100">
+        <div id="main-content-container" class="content w-50">
             <div class="d-flex flex-row justify-content-between">
                 <!-- Headings Begin -->
                 <div>
