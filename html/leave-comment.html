@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/booking-details.css">
+    <link rel="stylesheet" href="../css/leave-comment.css">
     <link rel="stylesheet" href="../css/common.css">
     <title>Hello, world!</title>
   </head>
@@ -56,71 +56,45 @@
         
     </nav>
     <!-- Navigation Bar End -->
-    <div class ="container" >
-        <div class="row">
-            <div class="col">
-            <h1>Downtown House by John</h1>
-            <p><nobr class ="rating-number">(2.5)  </nobr>Toronto, Ontario, Canada </p>
-            </div>
+    <div class="container">
+    <div class="row">
+        <div class="col" style="margin-bottom:30px">
+            <h1>Leave Your Comment Here</h1>
+            <form>
+                <label for ="emailForm">Your Email:</label>
+                <input class="emailForm" name="email" type="email"></input><br>  
+                
+                <label for="Feedback">Feedback:</label>
+        
+                <textarea class ="Feedback" placeholder="Enter your feedback here" name="feedback"></textarea><br>
+                <label for="submittedFile">Attachment:</label>
+                <input type="file" id="submittedFile" name="attachments"><br>
+                <button type="submit" class="send-comment-button">Leave Comment</button>
+              </form>
         </div>
+        <div class="col" style="border-color:lightsalmon;border-style:solid;">
+            <h1 class="text-center">Reservation Details</h1>
+            <div class="row">
+            <div class="col-4">
+                <img src="../images/house2.jpg" alt="Booking Place" style="width:15vh;height:15vh">
+            </div>
+            <div class="col">
+                <h4>Downtown House By John</h4>
+                <p class="rating-number">(4.0)</p>
+                <h5>$120.60 per day</h5>
+            </div>
+            <p style="margin-left:15px; margin-top:20px;">A nice cozy three bedroom house in suburban Toronto, A great place to vacation and hang out with your family.
+                Close to many restaurants and attractions along with a close proximity to the subway. Kitchen provided and electricity provided.</p>
+            <a href="property.html" style="margin-left:15px; margin-top:10px; margin-right:400px;">More details</a>
+            <h4 style="margin-left:15px; margin-top:10px;">Start Date: July 27, 2021</h4>
+            <h4 style="margin-left:15px; margin-top:10px; margin-right:100px;   ">End Date: July 31, 2021</h4>
+            <h4 style="margin-left:15px; margin-top:10px; color:green; margin-right:200px">Approved</h4>
+            <h5 style="margin-left:15px; margin-top:10px;">$120.60 * 3 = $481.80</h5>
 
-        <div class="row">
-            <div class="col">
-                <div class="slideshow"></div>            
-            </div>
-            <div class="col">
-                <h2 style="margin-bottom:20px;">Description</h2>
-                <p style="margin-bottom:10px;">A nice cozy three bedroom house in suburban Toronto, A great place to vacation and hang out with your family.
-                    Close to many restaurants and attractions along with a close proximity to the subway. Kitchen provided and electricity provided.
-                </p>
-                    <ul>
-                        <li>3 bedroom</li>
-                        <li>Kitchen provided</li>
-                        <li>3 bathroom</li>
-                        <li>Electricity provided</li>
-                        <li>Independent cleaning</li>
-                    </ul>
-                <p>Contact: <a href="mailto:johnjohnson10101@gmail.com">johnjohnson10101@gmail.com</a></p>
-                <h2 class = "price-tag">120.60 per day</h2>
-                <p style="font-size:10px;">Tax and other fees not included</p>
-            
-            </div>
-        </div>
-        <!-- Start of booking details-->
-        <div class="row">
-            <div class="col">
-            <h1>Review Your Booking</h1>
-            <h4 style="color:green">Active</h4>
-        </div>  
-        </div>
-        <div class="row">
-            <div class="col">
-                <h4>Start Date: July 27, 2021</h4>
-                <p>Sign-in: 9:00 am - 3:00 pm</p>
-                <h4>End Date: July 31, 2021</h4>
-                <p>sign-out: 11:00 am</p>
-            </div>
-            <div class="col">
-                <form action="booking-details.html">
-                    <button class = "leave-comment-button" href="leave-comment.html">Leave a Comment</button>
-                </form>
-                <form onclick="return confirm('Are you sure?')" >
-                    <button class = "cancel-booking-button" href="booking.html">Request Cancel</button>
-                </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class ="col">
-                <div class ="renter-info">
-                    <img id="profile-pic" src="../images/profile-pic.png" alt="Profile Picture">
-                    <h4 style="padding-top:5px;">Hosted By John Johnson (4.0)</h4>
-                    <div class="line-break"></div>
-                    <a href="mailto:johnjohnson10101@gmail.com">johnjohnson10101@gmail.com</a>
-                               </div>
             </div>
         </div>
     </div>
-
+    </div>
     <!-- Footer Begin -->
     <footer id="index-footer" class="navbar fixed-bottom px-5 footer">
         <div class="d-flex flex-row justify-content-center align-items-center">

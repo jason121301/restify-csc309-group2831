@@ -1,0 +1,91 @@
+.restify-logo {
+    color: #FF8967;
+    font-weight: bold;
+}
+
+.restify-logo:hover {
+    color: #FFF;
+}
+
+.notif-icon {
+    color: #FF8967;
+}
+
+#my-rentals-btn {
+    color: #FF8967;
+    border: 1px solid #FF8967;
+}
+
+#my-rentals-btn:hover {
+    color: #FFF;
+    background-color: #FF8967;
+}
+
+#profile-pic-navbar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#user-fn {
+    margin: 0;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right:10px;
+}
+
+
+.btn-theme {
+    color: #c3c3c3;
+    background-color: #FFF;
+}
+
+.btn-theme:hover {
+    color: #FFF;
+    background-color: #FF8967;
+}
+
+.rating-number{
+    font-size: 16px;
+    color:#FF8967;
+}
+
+
+
+.line-break {
+    width: 100%;
+  }
+
+  .FeedbackForm{
+    margin-left: 0.5 rem;
+    margin-right: 0.5 rem;
+  }
+  
+  .emailCheckbox{
+    transform: scale(1.5);
+  }
+  
+  .emailForm{
+    width: 100%;
+  }
+  .Feedback{
+    width: 100%;
+    height: 50vh;
+  }
+
+  .send-comment-button{
+    font-size:30px;
+    color:#FFF;
+    background-color: #FF8967;
+    border-color:#FFF;
+  }
+
+  .send-comment-button:hover{
+    background-color: #FFF;
+    color:#FF8967;
+    border-color:#FF8967;
+  }
