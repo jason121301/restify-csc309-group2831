@@ -139,7 +139,7 @@
                             <a class="dropdown-item" href="catalog.html">By Rating</a>
                         </div>
 
-                        <a class="btn-filtr col-6" type="button" id="my-btn" href="#bannerformmodal" data-bs-toggle="modal">
+                        <a class="btn-filtr col-6" type="button" id="my-btn" data-toggle="modal" data-target="#amenitiesmmodal">
                             <i class="fas fa-filter pr-2"></i>
                             Amenities
                         </a>
@@ -453,6 +453,71 @@
             </div>
             </div>
         </div>
+
+        <!-- Modals Begin -->
+        <div class="modal fade" id="amenitiesmmodal" tabindex="-1" role="dialog" aria-labelledby="amenitiesmmodalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                     <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="amenitiesmmodalLabel">
+                            Amenities
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <form action="catalog.html" method="get" novalidate="novalidate">
+                        <div class="modal-body">
+                            <div class="d-flex flex-column">
+                                
+                                    <div class="card mb-2">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Essentials</h6>
+                                            <input type="checkbox" id="wifi" name="name" value="Wi-Fi">
+                                            <label for="wifi">Wi-Fi</label><br>
+                                            <input type="checkbox" id="wifi" name="name" value="Wi-Fi">
+                                            <label for="wifi">Wi-Fi</label><br>
+                                            <input type="checkbox" id="wifi" name="name" value="Wi-Fi">
+                                            <label for="wifi">Wi-Fi</label><br>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-2">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Features</h6>
+                                            <input type="checkbox" id="wifi" name="name" value="Wi-Fi">
+                                            <label for="wifi">Wi-Fi</label><br>
+                                            <input type="checkbox" id="wifi" name="name" value="Wi-Fi">
+                                            <label for="wifi">Wi-Fi</label><br>
+                                            <input type="checkbox" id="wifi" name="name" value="Wi-Fi">
+                                            <label for="wifi">Wi-Fi</label><br>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Location</h6>
+                                            <input type="checkbox" id="wifi" name="name" value="Wi-Fi">
+                                            <label for="wifi">Wi-Fi</label><br>
+                                            <input type="checkbox" id="wifi" name="name" value="Wi-Fi">
+                                            <label for="wifi">Wi-Fi</label><br>
+                                            <input type="checkbox" id="wifi" name="name" value="Wi-Fi">
+                                            <label for="wifi">Wi-Fi</label><br>
+                                        </div>
+                                    </div>
+                                </form>    
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" class="btn btn-secondary" data-dismiss="modal" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Modals End -->
 
     </main>
     <!-- End of cards -->

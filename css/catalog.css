@@ -135,7 +135,7 @@
     #my-btn{
         color: #FF8967;
         border: 1px solid #FF8967;
-        
+
         width: 50%;
         padding: 15px 22px;
         border-radius: 10px;
@@ -164,4 +164,19 @@
         color: #FF8967;
         font-size: 14px;
         text-align: rigth;
+    }
+
+    .modal-dialog {
+        min-width: 50vw;
+    }
+    
+    @media (min-width: 768px) {
+        .modal-dialog {
+            max-width: fit-content;
+        }
+    }
+    
+    .btn-theme {
+        background-color: #FF8967;
+        color: #fff;
     }
