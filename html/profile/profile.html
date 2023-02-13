@@ -13,7 +13,7 @@
     <title>Restify | Profile</title>
 <body>
     <!-- Navigation Bar Begin -->
-    <nav class="navbar mx-5">
+    <nav id="navbar-index" class="navbar mx-5">
 
         <div class="d-flex flex-row justify-content-between w-100">
 
@@ -25,7 +25,7 @@
                 <div class="dropdown">
                     <i class="bi bi-bell notif-icon mx-1"></i>
                     <i class="bi bi-bell-fill notif-icon-fill mx-1" type="button" id="notificationButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                    <div class="dropdown-menu my-3" aria-labelledby="notificationButton">
+                    <div id="notification-dropdown" class="dropdown-menu dropdown-menu-right my-3" aria-labelledby="notificationButton">
                         <div class="dropdown-item dropdown-card">
                             <h6>New login</h6>
                             <a class="stretched-link" href="#">Review details</a>
@@ -43,6 +43,9 @@
                 <!-- Notifications End -->
 
                 <button id="my-rentals-btn" class="btn btn-outline-danger my-2 mx-2" type="submit">My Rental Units</button>
+                <i id="my-rentals-icon" class="bi bi-house-check mx-2"></i>
+                <i id="my-rentals-icon-fill" class="bi bi-house-check-fill mx-2"></i>
+
 
                 <!-- Profile Menu Begin -->
                 <div class="d-flex align-items-center">
@@ -57,17 +60,15 @@
     </nav>
     <!-- Navigation Bar End -->
 
-    <main class="d-flex flex-column mt-5 mx-5 px-3 flex-sm-wrap">
+    <main id="main-body" class="d-flex flex-column mt-5 mx-5 px-3 flex-sm-wrap">
 
         <!-- Headings Begin -->
         <h1 class="text-left">Account</h1>
         <h4 class="text-left">Manage your experience</h4>
         <!-- Headings End -->
 
-        
-
         <!-- Cards Begin -->
-        <div class="card-deck flex-row my-4">
+        <div id="card-deck" class="card-deck flex-row flex-wrap my-4">
             <!-- Personal Info Begin -->
             <div class="card settings-card w-25">
                 <div class="card-body">

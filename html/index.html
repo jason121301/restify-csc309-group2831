@@ -13,7 +13,7 @@
     <title>Restify | Home</title>
 <body>
     <!-- Navigation Bar Begin -->
-    <nav class="navbar mx-5">
+    <nav id="navbar-index" class="navbar mx-5">
 
         <div class="d-flex flex-row justify-content-between w-100">
 
@@ -25,7 +25,7 @@
                 <div class="dropdown">
                     <i class="bi bi-bell notif-icon mx-1"></i>
                     <i class="bi bi-bell-fill notif-icon-fill mx-1" type="button" id="notificationButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                    <div class="dropdown-menu my-3" aria-labelledby="notificationButton">
+                    <div id="notification-dropdown" class="dropdown-menu dropdown-menu-right my-3" aria-labelledby="notificationButton">
                         <div class="dropdown-item dropdown-card">
                             <h6>New login</h6>
                             <a class="stretched-link" href="#">Review details</a>
@@ -43,6 +43,9 @@
                 <!-- Notifications End -->
 
                 <button id="my-rentals-btn" class="btn btn-outline-danger my-2 mx-2" type="submit">My Rental Units</button>
+                <i id="my-rentals-icon" class="bi bi-house-check mx-2"></i>
+                <i id="my-rentals-icon-fill" class="bi bi-house-check-fill mx-2"></i>
+
 
                 <!-- Profile Menu Begin -->
                 <div class="d-flex align-items-center">
@@ -59,7 +62,7 @@
 
     <main class="d-flex flex-column justify-content-center align-items-center mt-5">
         <!-- Slogan Begin -->
-        <h2 class="mb-4">
+        <h2 id="slogan" class="mb-4">
             Find the perfect place to stay!
         </h2>
         <!-- Slogan End -->
@@ -105,7 +108,7 @@
                         </div>
 
                         <div class="col-lg-2 col-md-12">
-                            <button type="button" class="add-prop">Search</button>
+                            <button id="search-btn" type="button" class="add-prop">Search</button>
                         </div>
 
                     </div>

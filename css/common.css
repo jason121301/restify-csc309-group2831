@@ -72,3 +72,47 @@
     font-weight: 500;
 }
 /* Footer End */
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #my-rentals-btn {
+        display: none;
+    }
+
+    #my-rentals-icon {
+        color: #FF8967;
+        cursor: pointer;
+    }
+
+    #my-rentals-icon:hover {
+        display: none;
+    }
+
+    #my-rentals-icon ~ #my-rentals-icon-fill {
+        display: none;
+    }
+
+    #my-rentals-icon:hover ~ #my-rentals-icon-fill {
+        display: inline-block;
+    }
+
+    #my-rentals-icon-fill {
+        color: #FF8967;
+    }
+
+    #navbar-index {
+        margin-left: 0.25rem !important;
+        margin-right: 0.25rem !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #my-rentals-icon {
+        display: none;
+    }
+
+    #my-rentals-icon-fill {
+        display: none;
+    }
+}

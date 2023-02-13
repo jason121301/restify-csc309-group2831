@@ -89,12 +89,34 @@ a:hover {
     background-color: #FF8967;
 }
 
-#search-btn {
-    color: #FFF;
-    background-color: #FF8967;
-    border: 1px solid #FF8967;
+#search-btn:hover {
+    color: #FF8967;
+    background-color: #FFF;
 }
 
 #index-footer {
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(100, 100, 100));
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #my-rentals-btn {
+        display: none;
+    }
+
+    #navbar-index {
+        margin-left: 0.25rem !important;
+        margin-right: 0.25rem !important;
+    }
+
+    #slogan {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #my-rentals-btn {
+        display: block;
+    }
 }
