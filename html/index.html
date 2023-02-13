@@ -65,92 +65,54 @@
         <!-- Slogan End -->
 
         <!-- Search Bar Begin -->
-        <div class="d-flex flex-row search-bar p-3">
-            <!-- Where Begin -->
-            <div class="">
-                <p class="search-bar-heading">
-                    Where
-                </p>
-                <div class="dropdown">
-                    <button class="btn btn-theme" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Search destinations
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Toronto, ON</a>
-                        <a class="dropdown-item" href="#">Calgary, AB</a>
-                        <a class="dropdown-item" href="#">Vancouver, BC</a>
-                        <a class="dropdown-item" href="#">Montreal, QC</a>
+        <div class="container">
+            <div class="search-bar">
+                <form action="#" method="post" novalidate="novalidate">
+
+                    <div class="row align-items-center my-3">
+
+                        <div class="col-lg-3 col-md-12">
+                            <div class="form-group">
+                                <label for="destination" class ="search-bar-heading">Where</label>
+                                <input type="text" class="form-control" id="destination" placeholder="Toronto" >
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-12">
+                            <div class="form-group">
+                                <label for="checkin" class ="search-bar-heading">Check-in</label>
+                                <input type="text" class="form-control" id="checkin" placeholder="13 Feb 2023" >
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-12">
+                            <div class="form-group">
+                                <label for="checkout" class ="search-bar-heading">Check-in</label>
+                                <input type="text" class="form-control" id="checkout" placeholder="15 Feb 2023" >
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12">
+                            <div class="form-group">
+                                <label for="guests" class ="search-bar-heading">Guests</label>
+                                <select class="form-control" id="guests">
+                                    <option>2 guests</option>
+                                    <option>1 guest</option>
+                                    <option>2 guests</option>
+                                    <option>3 guests</option>
+                                    <option>4 guests </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-12">
+                            <button type="button" class="add-prop">Search</button>
+                        </div>
+
                     </div>
-                </div>
+                </form>
             </div>
-            <!-- Where End -->
-
-            <div class="mx-2 vl"></div>
-
-            <!-- Check In Begin -->
-            <div class="">
-                <p class="search-bar-heading">
-                    Check in
-                </p>
-                <div class="dropdown">
-                    <button class="btn btn-theme" type="button" id="dropdownCheckInButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Add dates
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownCheckInButton">
-                        <a class="dropdown-item" href="#">Today</a>
-                        <a class="dropdown-item" href="#">Tomorrow</a>
-                        <a class="dropdown-item" href="#">Next week</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Check In End -->
-
-            <div class="mx-2 vl"></div>
-
-            <!-- Check Out Begin -->
-            <div class="">
-                <p class="search-bar-heading">
-                    Check out
-                </p>
-                <div class="dropdown">
-                    <button class="btn btn-theme" type="button" id="dropdownCheckOutButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Add dates
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownCheckOutButton">
-                        <a class="dropdown-item" href="#">Tomorrow</a>
-                        <a class="dropdown-item" href="#">Next month</a>
-                        <a class="dropdown-item" href="#">Next year</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Check Out End -->
-
-            <div class="mx-2 vl"></div>
-
-            <!-- Guests Begin -->
-            <div class="">
-                <p class="search-bar-heading">
-                    Guests
-                </p>
-                <div class="dropdown">
-                    <button class="btn btn-theme" type="button" id="dropdownGuestButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Add guests
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownGuestButton">
-                        <a class="dropdown-item" href="#">1</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5</a>
-                        <a class="dropdown-item" href="#">6+</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Guests End -->
         </div>
         <!-- Search Bar End -->
-
-        <button id="search-btn" class="btn btn-outline-danger my-4" type="submit">Search accommodation</button>
     </main>
 
     <!-- Footer Begin -->
