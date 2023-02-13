@@ -35,7 +35,7 @@ Restify is a web-application, much like AirBNB or Bookings.com which allows user
         - [ ] Pop-up: Leaving a review for a user
     - [x] Reviews
 - [x] Catalog
-    - [ ] Pop-up: Amenities -IN PROGRESS
+    - [x] Pop-up: Amenities
     - [x] Property for a user page
     - [x] Booking
 - [ ] Comment page from the user's POV
