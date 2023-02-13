@@ -1,0 +1,52 @@
+textarea {
+    resize: none;
+}
+
+#image-upload-btn {
+    border: 2px solid #FF8967 !important;
+    /* padding: 5rem 10rem; */
+}
+
+#upload-icon {
+    color: #FF8967;
+    cursor: pointer;
+    font-size: 5rem;
+}
+
+#upload-icon-fill {
+    color: #FF8967;
+    cursor: pointer;
+    font-size: 5em;
+}
+
+#image-upload-btn:hover > #upload-icon {
+    display: none;
+}
+
+#image-upload-btn:hover > #upload-icon-fill {
+    display: inline-block;
+}
+
+#upload-icon ~ #upload-icon-fill {
+    display: none;
+}
+
+#upload-icon-fill {
+    color: #FF8967;
+}
+
+.w-49 {
+    width: 49% !important;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #main-body {
+        padding: 0 !important;
+        margin: 1rem !important;
+    }
+
+    #main-content-container {
+        width: 100% !important;
+    }
+}
