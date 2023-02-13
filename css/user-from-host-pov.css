@@ -1,0 +1,127 @@
+tr.no-border td, tr.no-border th {
+    border: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+#profile-pic-information {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#profile-pic-information-host{
+    display: flex;
+    border-radius: 50%;
+    width: 70%;
+    align-items: flex-start;
+}
+
+.edit-icon {
+    color: #FF8967;
+}
+
+.edit-icon:hover {
+    color: #7e7e7e;
+}
+
+#information-footer {
+    color: #000000;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #main-body {
+        padding: 0 !important;
+        margin: 1rem !important;
+    }
+
+    #information-footer {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+
+    #main-content-container {
+        width: 100% !important;
+    }
+}
+
+.fa-star {
+    font-size: 16px;
+    color: #FF8967;
+  }
+
+
+.star-rate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}  
+
+.star-rate p{
+    margin: 0;
+    color: #FF8967;
+}
+
+h6 {
+    width: inherit;
+}
+
+.card {
+    background-color: #ededed;
+    border-radius: 10px;
+    padding: 16px;
+    border-width: 0;
+}
+
+.add-prop{
+    color: #FFF;
+    background-color: #FF8967;
+    border: 1px solid #FF8967;
+    border-radius: 10px;
+    padding: 15px 22px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 150%;
+    width: inherit;
+}
+
+    /* footer styles */
+    footer {
+        border-top: #FF8967;
+        color: #FFF;
+        font-weight: 500;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    footer p{
+        color: #FF8967;
+        font-size: 14px;
+        text-align: rigth;
+    }
+
+    a:hover{
+        text-decoration: none;
+        color: white;
+    }
+
+    .modal-dialog {
+        min-width: 50vw;
+        min-height: 70vh;
+    }
+    
+    @media (min-width: 768px) {
+        .modal-dialog {
+            max-width: fit-content;
+        }
+    }
+    
+    .btn-theme {
+        background-color: #FF8967;
+        color: #fff;
+    }
+
