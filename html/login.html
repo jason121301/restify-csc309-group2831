@@ -19,8 +19,14 @@
 
 <body>
     <!-- Navigation Bar Begin -->
-    <nav class="navbar mx-5">
-        <a class="navbar-brand restify-logo">Restify</a>        
+    <nav id="navbar-index" class="navbar mx-5">
+
+        <div class="d-flex flex-row justify-content-between w-100">
+
+            <a class="navbar-brand restify-logo">Restify</a>
+
+        </div>
+        
     </nav>
     <!-- Navigation Bar End -->
 
@@ -37,7 +43,7 @@
             <label for="inputPassword" class="sr-only">Password</label>
             <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
 
-            <button class="btn-filled" type="submit">Log into your account</button>
+            <button class="btn-filled" type="submit" onclick="window.location.href='index.html';">Log into your account</button>
         </form>    
     </main>
 
