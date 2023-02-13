@@ -16,9 +16,9 @@ Restify is a web-application, much like AirBNB or Bookings.com which allows user
 - Manage properties
 
 
-## Getting Started
+## Version History
 
-*Coming soon*
+All edits made can be found under the [commits](https://github.com/jason121301/restify-csc309-group2831/commits/main) tab.
 
 ## Roadmap
 
