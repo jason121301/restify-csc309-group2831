@@ -23,24 +23,33 @@ All edits made can be found under the [commits](https://github.com/jason121301/r
 ## Roadmap
 
 **Pages and pop-ups:**
-- [x] Sign-up / Log-in
+
+Ash:
 - [x] Home
 - [x] Account
     - [x] Personal information
-    - [x] My reservations (*user is a guest*)
-        - [x] Pop-up: Cancel reservation
-    - [x] My properties (*user is now a host*)
-        - [x] Property management page
-        - [x] Property creation page
-        - [x] User page from the POV of a host  
-        - [x] Pop-up: Leaving a review for a user
-    - [x] Reviews
+    - [x] Property creation page
+    - [x] My Reviews
+
+Jason:
+- [x] Catalog property for a user page
+- [x] Booking of the property
+- [x] My reservations (*user is a guest*)
+    - [x] Pop-up: Cancel reservation
+- [x] Booking details (access from My reservations)
+- [X] Comment page from the user's POV
+    
+Kate:
+- [x] Sign-up / Log-in
 - [x] Catalog
     - [x] Pop-up: Amenities
-    - [x] Property for a user page
-    - [x] Booking
-- [X] Comment page from the user's POV
+- [x] My properties (*user is now a host*)
+    - [x] Property management page
+- [x] User page from the POV of a host 
+    - [x] Pop-up: Leaving a review for a user
 
+
+    
 
 ## Credits
 
